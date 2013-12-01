@@ -31,9 +31,9 @@ def update_s(S, xs):
 
 
 if __name__=="__main__":
-  if "--help" in sys.argv or "-h" in sys.argv:
+  if "--help" in sys.argv or "-h" in sys.argv or len(sys.argv) < 3:
     print """usage:
-{} DIRECTORY LIST-OF-FILES...
+{} [-h|--help] DIRECTORY LIST-OF-FILES...
 copies largest files after two-means separation by size over to DIRECTORY
 
 author: hacxman <at> gmail d*o*t com""".format(sys.argv[0])
