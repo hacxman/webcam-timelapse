@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+mkdir -p 0 1
 rsync --progress -u pi@gorgorod:~/webcam/*.jpg jpgs/
 rm 0/*.jpg
 ./skipframes.sh 0/ 12
