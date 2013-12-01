@@ -4,4 +4,7 @@ Run sync_and_encode.sh.
 It will fetch jpgs into jpgs directory, then copy each 19th
 file into 0/ directory, and then tries to filter usable (non-black)
 pictrues and copy them to 1/ directory.
-Then it will run mencoder to produce H.264 encoded video from jpgs in 1/.
+Then it will run mencoder to produce H.264 encoded video from jpgs in 1/ at 48 FPS.
+
+By changing last parameter at skip_frames and enc in sync_and_encode
+you can control lenght and smoothness of video.
